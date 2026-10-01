@@ -32,7 +32,8 @@ export interface StoryDocument {
   characters: StoryCharacter[];
   scenes: StoryScene[];
   clues: StoryClue[];
-  selectedSceneId: string;
+  /** 纯视图状态：只存在于各标签页内存中，不写入存储 */
+  selectedSceneId?: string;
   updatedAt: string;
 }
 
